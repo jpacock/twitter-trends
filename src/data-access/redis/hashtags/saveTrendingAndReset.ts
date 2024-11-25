@@ -14,7 +14,7 @@ export const saveTrendingAndReset = async () => {
     const trendingHashtags = await redisClient.zRangeWithScores(currentKey, 0, size - 1, { REV: true });
 
     if (trendingHashtags.length === 0) {
-      logger.info('No trending hashtags to save.');
+      logger.info('No recent trending hashtags history to save.');
       return;
     }
 
@@ -31,12 +31,12 @@ export const saveTrendingAndReset = async () => {
 
     await redisClient.lPush(trendingListKey, historicalKey);
 
-    logger.info(`Successfully stored trending hashtags for ${historicalKey}`);
+    logger.info(`Successfully stored recently trending hashtags for ${historicalKey}`);
 
     await redisClient.del(currentKey);
   } catch (error) {
     const err = error as Error;
-    logger.error(`Error storing trending hashtags:`, err.message);
+    logger.error(`Error storing recently trending hashtags:`, err.message);
   }
 };
 

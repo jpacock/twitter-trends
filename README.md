@@ -67,7 +67,7 @@ I created tweet simulator to simulate a high frequency of generic tweets to be a
 | ------------------------------------- | ---------------------------------------------------------- | -------- | ------------------------ |
 | `LOG_LEVEL`                           | Level of logger (e.g. 'DEBUG', 'INFO', 'TRACE')            | No       | Info                     |
 | `SERVER_HOST`                         | IP of host server                                          | No       | localhost                |
-| `SERVER_PORT`                         | Port of host server                                        | No       | '8080'                   |
+| `SERVER_PORT`                         | Port of host server                                        | No       | 8080                     |
 | `TRENDING_RECALCULATION_INTERVAL_SEC` | How often in seconds to store hashtags list                | No       | 10                       |
 | `TRENDING_SIZE`                       | How many trending hashtags to save                         | No       | 10                       |
 | `TWEET_DUPLICATE_INTERVAL_SEC`        | Duration in seconds to not allow tweet duplicates          | No       | 10                       |
