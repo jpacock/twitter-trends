@@ -1,0 +1,17 @@
+node_modules
+*.log
+.nyc_output
+bin
+coverage
+.DS_Store
+build
+.idea
+dump.rdb
+db/couchdb
+data
+.history
+.eslintcache
+contrast_service.log
+node-contrast-*.log
+contrast_effective_config.json
+contrast_system_info.json
