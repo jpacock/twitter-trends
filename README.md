@@ -49,10 +49,6 @@ Checking the currently trending hashtags:
    ```
    curl localhost:8080/trending-hashtags
    ```
-Checking the currently trending hashtags:
-   ```
-   curl localhost:8080/trending-hashtags
-   ```
 
 
 ## Tweet Simulator
